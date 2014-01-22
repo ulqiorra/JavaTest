@@ -1,5 +1,6 @@
 ContactManager/.settings
 ContactManager/org
+ContactManager/target
 *.class
 
 
