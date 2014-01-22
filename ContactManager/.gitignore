@@ -1,4 +1,4 @@
-*.class .settings/# Package Files #
+.settings/ *.class # Package Files #
 *.jar
 *.war
 *.ear
