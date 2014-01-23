@@ -24,5 +24,24 @@
 
 	<!-- Файл с настройками контроллеров -->
 	<beans:import resource="controllers.xml" />
+	
+	<beans:bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+        <beans:property name="paramName" value="lang" />
+    </beans:bean>
+
+    <beans:bean class="org.springframework.web.servlet.i18n.CookieLocaleResolver" id="localeResolver">
+        <beans:property name="cookieName" value="locale" />
+        <beans:property name="defaultLocale" value="ru" />
+    </beans:bean>
+
+    <beans:bean id="handlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+        <beans:property name="interceptors" ref="localeChangeInterceptor"/>
+    </beans:bean>
+
+    <interceptors>
+        <beans:bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+            <beans:property name="paramName" value="lang" />
+        </beans:bean>
+    </interceptors>
 
 </beans:beans>
