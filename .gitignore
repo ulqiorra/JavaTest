@@ -1,6 +1,12 @@
 ContactManager/.settings
 ContactManager/org
 ContactManager/target
+ContactManager/com/mysql/jdbc/exceptions
+ContactManager/com/mysql/jdbc/integration
+ContactManager/com/mysql/jdbc/jdbc2
+ContactManager/com/mysql/jdbc/log
+ContactManager/com/mysql/jdbc/profiler
+ContactManager/com/mysql/jdbc/util
 *.class
 
 
