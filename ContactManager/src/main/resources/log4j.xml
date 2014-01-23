@@ -15,6 +15,11 @@
 		<level value="info" />
 	</logger>
 	
+	 <!--org.hibernate.SQL logger-->
+    <logger name="org.hibernate">
+        <level value="info"/>
+    </logger>
+	
 	<!-- 3rdparty Loggers -->
 	<logger name="org.springframework.core">
 		<level value="info" />
